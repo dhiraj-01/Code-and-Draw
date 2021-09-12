@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code and Draw</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="h-100">
+        <div class="row h-100">
+            <div class="col col-sm-6 h-100 bg-dark">
+                <!-- code editor -->
+                <div class="row">
+                    <div class="col">
+                        <select class="m-1 form-select form-select-sm" aria-label="Default select example" onchange="setLanguage(this.value)">
+                          <option selected value="text">Language</option>
+                          <option value="c_cpp">C / C++</option>
+                          <option value="java">Java</option>
+                          <option value="python">Python</option>
+                          <option value="javascript">JavaScript</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="m-1 form-select form-select-sm" aria-label="Default select example" onchange="setFont(this.value)">
+                          <option selected value="16">Font Size</option>
+                          <option value="16">16px</option>
+                          <option value="18">18px</option>
+                          <option value="20">20px</option>
+                          <option value="22">22px</option>
+                          <option value="24">24px</option>
+                          <option value="26">26px</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="editor" class="row h-100"></div>
+            </div>
+            <!-- <div class="col bg-primary resizer" id="resizer"></div> -->
+            <div class="col h-100">
+                <!-- draw -->
+                <div class="row">
+                    <div class="col m-2">
+                        <div>
+                            <div class="dot bg-red" onclick="setClr('#f35353')"></div>
+                            <div class="dot bg-blue" onclick="setClr('#2b90ef')"></div>
+                            <div class="dot bg-green" onclick="setClr('#26c281')"></div>
+                            <div class="dot bg-orange" onclick="setClr('#ff9b3c')"></div>
+                            <div class="dot bg-black" onclick="setClr('#222222')"></div>
+                        </div>
+                    </div>
+                    <div type="button" class="col col-sm-2 m-2 btn btn-sm btn-outline-danger" onclick="clear()">Clear</div>
+                </div>
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="./Bootstrap/js/bootstrap.min.js"></script>
+    <script src="./Ace/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./editor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./canvas.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

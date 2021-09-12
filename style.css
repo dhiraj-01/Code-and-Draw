@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+.fh {
+    height: 100%;
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: inline-block;
+}
+.bg-red {
+    background-color: #f35353;
+}
+.bg-blue {
+    background-color: #2b90ef;
+}
+.bg-green {
+    background-color: #26c281;
+}
+.bg-orange {
+    background-color: #ff9b3c;
+}
+.bg-black {
+    background-color: #222222;
+}
+
+#canvas {
+    position: absolute;
+    background-color: rgb(184, 184, 197);
+}
