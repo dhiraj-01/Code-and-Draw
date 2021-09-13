@@ -4,15 +4,15 @@ html, body {
     height: 100%;
     overflow-x: hidden;
 }
-.fh {
-    height: 100%;
-}
 .dot {
   height: 25px;
   width: 25px;
   border-radius: 50%;
   margin-left: 10px;
   display: inline-block;
+}
+.dot-white {
+    border: 2px solid black;
 }
 .bg-red {
     background-color: #f35353;
@@ -29,8 +29,6 @@ html, body {
 .bg-black {
     background-color: #222222;
 }
-
-#canvas {
-    position: absolute;
-    background-color: rgb(184, 184, 197);
+#editor {
+    height: 95vh;
 }
